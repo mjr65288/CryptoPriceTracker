@@ -46,6 +46,7 @@ const CoinDetailedScreen = () => {
   }
 
   const {
+    id,
     image: { small },
     name,
     symbol,
@@ -96,6 +97,7 @@ const CoinDetailedScreen = () => {
         }}
       >
         <CoinDetailedHeader
+          coinId = {id}
           image={small}
           name={name}
           symbol={symbol}
